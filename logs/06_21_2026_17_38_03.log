@@ -1,0 +1,69 @@
+[ 2026-06-21 17:38:03,696 ] 26 root - INFO - Logger initialized successfully
+[ 2026-06-21 17:38:05,195 ] 20 root - INFO - \U0001f680 Starting training pipeline
+[ 2026-06-21 17:38:05,195 ] 67 root - INFO - Entered data ingestion method
+[ 2026-06-21 17:38:05,195 ] 45 root - INFO - Found dataset at: dataset\cyber_attack_dataset.csv
+[ 2026-06-21 17:38:05,262 ] 77 root - INFO - Dataset loaded with shape: (100000, 7)
+[ 2026-06-21 17:38:05,398 ] 84 root - INFO - Raw data saved to artifacts\raw.csv
+[ 2026-06-21 17:38:05,540 ] 97 root - INFO - Train data saved to artifacts\train.csv
+[ 2026-06-21 17:38:05,540 ] 98 root - INFO - Test data saved to artifacts\test.csv
+[ 2026-06-21 17:38:05,541 ] 99 root - INFO - Data ingestion completed successfully
+[ 2026-06-21 17:38:05,638 ] 102 root - INFO - \u2705 Train and test data loaded
+[ 2026-06-21 17:38:05,639 ] 103 root - INFO - Train shape: (80000, 7), Test shape: (20000, 7)
+[ 2026-06-21 17:38:05,644 ] 120 root - INFO - \U0001f3af Target column: attack_type
+[ 2026-06-21 17:38:05,645 ] 185 root - INFO - \U0001f4ca ===== OUTLIER STATISTICS BEFORE TRANSFORMATION =====
+[ 2026-06-21 17:38:05,649 ] 200 root - INFO - \U0001f4ca duration:
+[ 2026-06-21 17:38:05,649 ] 201 root - INFO -    - IQR Outliers: 0 (0.00%)
+[ 2026-06-21 17:38:05,650 ] 202 root - INFO -    - 99th Percentile: 58.00
+[ 2026-06-21 17:38:05,651 ] 203 root - INFO -    - Max value: 60.00
+[ 2026-06-21 17:38:05,651 ] 204 root - INFO -    ---
+[ 2026-06-21 17:38:05,655 ] 200 root - INFO - \U0001f4ca src_bytes:
+[ 2026-06-21 17:38:05,655 ] 201 root - INFO -    - IQR Outliers: 8512 (10.64%)
+[ 2026-06-21 17:38:05,656 ] 202 root - INFO -    - 99th Percentile: 9720.00
+[ 2026-06-21 17:38:05,657 ] 203 root - INFO -    - Max value: 10000.00
+[ 2026-06-21 17:38:05,657 ] 204 root - INFO -    ---
+[ 2026-06-21 17:38:05,670 ] 200 root - INFO - \U0001f4ca dst_bytes:
+[ 2026-06-21 17:38:05,670 ] 201 root - INFO -    - IQR Outliers: 10984 (13.73%)
+[ 2026-06-21 17:38:05,676 ] 202 root - INFO -    - 99th Percentile: 1930.00
+[ 2026-06-21 17:38:05,678 ] 203 root - INFO -    - Max value: 2000.00
+[ 2026-06-21 17:38:05,679 ] 204 root - INFO -    ---
+[ 2026-06-21 17:38:05,687 ] 200 root - INFO - \U0001f4ca packet_count:
+[ 2026-06-21 17:38:05,688 ] 201 root - INFO -    - IQR Outliers: 9246 (11.56%)
+[ 2026-06-21 17:38:05,690 ] 202 root - INFO -    - 99th Percentile: 967.01
+[ 2026-06-21 17:38:05,691 ] 203 root - INFO -    - Max value: 1000.00
+[ 2026-06-21 17:38:05,691 ] 204 root - INFO -    ---
+[ 2026-06-21 17:38:05,695 ] 200 root - INFO - \U0001f4ca protocol:
+[ 2026-06-21 17:38:05,696 ] 201 root - INFO -    - IQR Outliers: 0 (0.00%)
+[ 2026-06-21 17:38:05,698 ] 202 root - INFO -    - 99th Percentile: 1.00
+[ 2026-06-21 17:38:05,699 ] 203 root - INFO -    - Max value: 1.00
+[ 2026-06-21 17:38:05,699 ] 204 root - INFO -    ---
+[ 2026-06-21 17:38:05,705 ] 200 root - INFO - \U0001f4ca failed_logins:
+[ 2026-06-21 17:38:05,706 ] 201 root - INFO -    - IQR Outliers: 7548 (9.44%)
+[ 2026-06-21 17:38:05,707 ] 202 root - INFO -    - 99th Percentile: 10.00
+[ 2026-06-21 17:38:05,708 ] 203 root - INFO -    - Max value: 10.00
+[ 2026-06-21 17:38:05,708 ] 204 root - INFO -    ---
+[ 2026-06-21 17:38:05,709 ] 78 root - INFO - \u2705 Data transformer object created with outlier handling
+[ 2026-06-21 17:38:05,709 ] 136 root - INFO - \U0001f504 Applying transformation pipeline...
+[ 2026-06-21 17:38:06,096 ] 157 root - INFO - \u2705 Transformation complete. Train shape: (80000, 7)
+[ 2026-06-21 17:38:06,100 ] 16 root - INFO - Object saved at: artifacts\preprocessor.pkl
+[ 2026-06-21 17:38:06,101 ] 16 root - INFO - Object saved at: artifacts\label_encoder.pkl
+[ 2026-06-21 17:38:06,101 ] 171 root - INFO - \U0001f4be Preprocessor saved at: artifacts\preprocessor.pkl
+[ 2026-06-21 17:38:06,103 ] 33 root - INFO - Starting model training
+[ 2026-06-21 17:38:06,104 ] 58 root - INFO - Training Logistic Regression...
+[ 2026-06-21 17:38:06,281 ] 66 root - INFO - Logistic Regression - Accuracy: 0.9997, Recall: 0.9997
+[ 2026-06-21 17:38:06,302 ] 58 root - INFO - Training Random Forest...
+[ 2026-06-21 17:38:08,902 ] 66 root - INFO - Random Forest - Accuracy: 1.0000, Recall: 1.0000
+[ 2026-06-21 17:38:08,917 ] 58 root - INFO - Training Decision Tree...
+[ 2026-06-21 17:38:08,995 ] 66 root - INFO - Decision Tree - Accuracy: 1.0000, Recall: 1.0000
+[ 2026-06-21 17:38:08,995 ] 58 root - INFO - Training Support Vector Machine...
+[ 2026-06-21 17:38:10,035 ] 66 root - INFO - Support Vector Machine - Accuracy: 0.9998, Recall: 0.9998
+[ 2026-06-21 17:38:10,035 ] 58 root - INFO - Training K-Nearest Neighbors...
+[ 2026-06-21 17:38:10,330 ] 66 root - INFO - K-Nearest Neighbors - Accuracy: 0.9998, Recall: 0.9998
+[ 2026-06-21 17:38:10,330 ] 58 root - INFO - Training XGBoost...
+[ 2026-06-21 17:38:11,015 ] 66 root - INFO - XGBoost - Accuracy: 1.0000, Recall: 1.0000
+[ 2026-06-21 17:38:11,083 ] 16 root - INFO - Object saved at: artifacts\model.pkl
+[ 2026-06-21 17:38:11,085 ] 115 root - INFO - Model report saved to artifacts\model_report.txt
+[ 2026-06-21 17:38:11,086 ] 91 root - INFO - Best Model: Random Forest
+[ 2026-06-21 17:38:11,086 ] 92 root - INFO - Best Accuracy: 1.0000
+[ 2026-06-21 17:38:11,087 ] 35 root - INFO - Training pipeline completed successfully!
+[ 2026-06-21 17:38:11,087 ] 36 root - INFO - Best Model: Random Forest
+[ 2026-06-21 17:38:11,088 ] 37 root - INFO - Best Accuracy: 1.0000

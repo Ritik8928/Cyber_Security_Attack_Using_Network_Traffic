@@ -1,0 +1,13 @@
+[ 2026-06-21 17:36:12,407 ] 26 root - INFO - Logger initialized successfully
+[ 2026-06-21 17:36:13,964 ] 20 root - INFO - \U0001f680 Starting training pipeline
+[ 2026-06-21 17:36:13,964 ] 67 root - INFO - Entered data ingestion method
+[ 2026-06-21 17:36:13,964 ] 45 root - INFO - Found dataset at: dataset\cyber_attack_dataset.csv
+[ 2026-06-21 17:36:14,060 ] 77 root - INFO - Dataset loaded with shape: (100000, 7)
+[ 2026-06-21 17:36:14,259 ] 84 root - INFO - Raw data saved to artifacts\raw.csv
+[ 2026-06-21 17:36:14,417 ] 97 root - INFO - Train data saved to artifacts\train.csv
+[ 2026-06-21 17:36:14,418 ] 98 root - INFO - Test data saved to artifacts\test.csv
+[ 2026-06-21 17:36:14,418 ] 99 root - INFO - Data ingestion completed successfully
+[ 2026-06-21 17:36:14,521 ] 102 root - INFO - \u2705 Train and test data loaded
+[ 2026-06-21 17:36:14,521 ] 103 root - INFO - Train shape: (80000, 7), Test shape: (20000, 7)
+[ 2026-06-21 17:36:14,528 ] 120 root - INFO - \U0001f3af Target column: attack_type
+[ 2026-06-21 17:36:14,528 ] 47 root - ERROR - Training pipeline failed: Error occured in Python script name [D:\Projects\Cyber_Security_Attack_Using_Network_Traffic\src\components\data_transformation.py] line number [123] error message[Cannot specify both 'axis' and 'index'/'columns']

@@ -1,0 +1,8 @@
+[ 2026-06-21 17:34:27,989 ] 26 root - INFO - Logger initialized successfully
+[ 2026-06-21 17:34:28,140 ] 67 root - INFO - Entered data ingestion method
+[ 2026-06-21 17:34:28,140 ] 45 root - INFO - \u2705 Found dataset at: dataset\cyber_attack_dataset.csv
+[ 2026-06-21 17:34:28,208 ] 77 root - INFO - Dataset loaded with shape: (100000, 7)
+[ 2026-06-21 17:34:28,336 ] 84 root - INFO - Raw data saved to artifacts\raw.csv
+[ 2026-06-21 17:34:28,475 ] 97 root - INFO - Train data saved to artifacts\train.csv
+[ 2026-06-21 17:34:28,475 ] 98 root - INFO - Test data saved to artifacts\test.csv
+[ 2026-06-21 17:34:28,476 ] 99 root - INFO - Data ingestion completed successfully
